@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.0.4
+- https://www.phpmyadmin.net
+-
+- Host: localhost
+- Generation Time: Dec 22, 2020 at 04:16 PM
+- Server version: 10.4.17-MariaDB
+- PHP Version: 8.0.0
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="Rocketivity" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="Reminder">
+                CREATE TABLE `Reminder` (
+                  `name` varchar(50) NOT NULL,
+                  `time` varchar(10) NOT NULL,
+                  `date` date NOT NULL,
+                  `turn_on` int(2) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="Sign_up">
+                CREATE TABLE `Sign_up` (
+                  `email` varchar(50) NOT NULL,
+                  `password` varchar(20) NOT NULL,
+                  UNIQUE KEY `email` (`email`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="Todo">
+                CREATE TABLE `Todo` (
+                  `add_task` varchar(50) NOT NULL,
+                  `sub_task1` varchar(50) NOT NULL,
+                  `sub_task2` varchar(50) NOT NULL,
+                  `sub_task3` varchar(50) NOT NULL,
+                  `sub_task4` varchar(50) NOT NULL,
+                  `time` varchar(10) NOT NULL,
+                  `date` date NOT NULL,
+                  `category` varchar(10) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'Rocketivity'
+    -->
+    <database name="Rocketivity">
+        <!-- Table Reminder -->
+        <table name="Reminder">
+            <column name="name">Grandmaa Birthday</column>
+            <column name="time">09:00</column>
+            <column name="date">2021-01-21</column>
+            <column name="turn_on">1</column>
+        </table>
+        <table name="Reminder">
+            <column name="name">Bake Birthday cake</column>
+            <column name="time">10:30</column>
+            <column name="date">2021-01-14</column>
+            <column name="turn_on">1</column>
+        </table>
+        <table name="Reminder">
+            <column name="name">Cut down tree</column>
+            <column name="time">14:35</column>
+            <column name="date">2021-01-26</column>
+            <column name="turn_on">0</column>
+        </table>
+        <table name="Reminder">
+            <column name="name">Rake lawn</column>
+            <column name="time">15:40</column>
+            <column name="date">2021-01-20</column>
+            <column name="turn_on">0</column>
+        </table>
+        <table name="Reminder">
+            <column name="name">Get salt for snow</column>
+            <column name="time">18:00</column>
+            <column name="date">2020-12-30</column>
+            <column name="turn_on">1</column>
+        </table>
+        <!-- Table Sign_up -->
+        <table name="Sign_up">
+            <column name="email">mes3198@thi.de</column>
+            <column name="password">megan123</column>
+        </table>
+        <table name="Sign_up">
+            <column name="email">mi.0375@thi.de</column>
+            <column name="password">milly123</column>
+        </table>
+        <table name="Sign_up">
+            <column name="email">nip5311@thi.de</column>
+            <column name="password">niklas432</column>
+        </table>
+        <table name="Sign_up">
+            <column name="email">til4301@thi.de</column>
+            <column name="password">tim456</column>
+        </table>
+        <!-- Table Todo -->
+        <table name="Todo">
+            <column name="add_task">Hosehold chores</column>
+            <column name="sub_task1">Make bed</column>
+            <column name="sub_task2">Empty Dishwasher</column>
+            <column name="sub_task3">Fold laundry</column>
+            <column name="sub_task4"></column>
+            <column name="time">14:35</column>
+            <column name="date">2021-01-14</column>
+            <column name="category">Planet</column>
+        </table>
+        <table name="Todo">
+            <column name="add_task">Project meeting</column>
+            <column name="sub_task1">AR discussion</column>
+            <column name="sub_task2">Blender model design</column>
+            <column name="sub_task3"></column>
+            <column name="sub_task4"></column>
+            <column name="time">15:40</column>
+            <column name="date">2021-01-14</column>
+            <column name="category">Planet</column>
+        </table>
+        <table name="Todo">
+            <column name="add_task">Meeting with mark</column>
+            <column name="sub_task1"></column>
+            <column name="sub_task2"></column>
+            <column name="sub_task3"></column>
+            <column name="sub_task4"></column>
+            <column name="time">18:00</column>
+            <column name="date">2021-01-14</column>
+            <column name="category">Star</column>
+        </table>
+        <table name="Todo">
+            <column name="add_task">Groceries today</column>
+            <column name="sub_task1">Tomatoes</column>
+            <column name="sub_task2">Fruits</column>
+            <column name="sub_task3">eggs and fish</column>
+            <column name="sub_task4">milk and curd</column>
+            <column name="time">19:20</column>
+            <column name="date">2021-01-14</column>
+            <column name="category">Star</column>
+        </table>
+    </database>
+</pma_xml_export>
