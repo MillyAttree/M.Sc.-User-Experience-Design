@@ -1,0 +1,1 @@
+  1/8/21 3:11:13 PM GMT+1: Starting composition “Mobile_01”.  Output To: /Users/a/Desktop/Mobile_01.mov    1/8/21 4:01:14 PM GMT+1: Finished composition “Mobile_01”.  Total Time Elapsed: 50 Min, 1 SecLog closed on 1/8/21 at 4:01:16 PM GMT+1
